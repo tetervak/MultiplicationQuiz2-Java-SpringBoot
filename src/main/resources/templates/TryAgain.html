@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Try Again</title>
+    <link rel="stylesheet" href="../static/css/main.css" th:href="@{css/main.css}">
+    <link rel="stylesheet" href="../static/css/footer.css" th:href="@{css/footer.css}">
+</head>
+<body>
+<main>
+    <h1>Multiplication Quiz 2</h1>
+    <h2>Try Again</h2>
+    <h3>Enter your answer</h3>
+    <form th:action="@{check-answer}" action="RightAnswer.html" method="get" >
+        <p>
+            <label for="answer" class="problem_text">
+                <span th:text="${session.problem.a}" class="number">2</span>
+                &times;
+                <span th:text="${session.problem.b}" class="number">2</span> =
+            </label>
+            <input id="answer" type="text" name="userAnswer"/>
+        </p>
+        <p>
+            <input type="submit" value="Submit">
+        </p>
+    </form>
+    <p>
+        <a th:href="@{new-problem}" href="NewProblem.html">New Problem</a>
+    </p>
+    <p>
+        <a th:href="@{see-answer}" href="SeeAnswer.html">See Answer</a>
+    </p>
+</main>
+<footer>
+    Sheridan College&nbsp;&nbsp;<span class='hart'>&#9825;</span>&nbsp;&nbsp;2023
+</footer>
+</body>
+</html>

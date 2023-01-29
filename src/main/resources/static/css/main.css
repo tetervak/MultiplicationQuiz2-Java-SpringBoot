@@ -1,0 +1,73 @@
+body{
+    padding-left: 1em;
+    font-family: sans-serif;
+}
+
+main{
+    padding-left: 1em;
+}
+
+h1{
+    color: #4caf50;
+    text-shadow: 2px 2px 5px #81c784;
+}
+
+h2 {
+    color: #00bcd4;
+}
+
+h3 {
+    color: steelblue;
+    margin-bottom: .5em;
+}
+
+.number{
+    color: coral;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"]{
+    width: 3em;
+    vertical-align: baseline;
+    border-radius: 6px;
+    border-style: solid;
+    border-width: thin;
+    border-color: gray;
+    padding-left: 5px;
+    font-size: 100% ;
+}
+
+input[type="submit"]{
+    margin-left: 1em;
+}
+
+a{
+    color: limegreen;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.problem_text{
+    color:  blueviolet;
+}
+
+.right{
+    color:green;
+    font-weight:bolder
+}
+
+.wrong{
+    color:red;
+    font-weight:bolder
+}
+
+.message{
+    color: darkorange;
+}
