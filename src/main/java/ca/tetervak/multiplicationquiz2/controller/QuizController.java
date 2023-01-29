@@ -8,7 +8,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpSession;
 
@@ -40,6 +39,7 @@ public class QuizController {
             log.debug("The session data is not found.");
             return "SessionExpired";
         } else {
+            log.debug("problem = " + problem);
             return "SeeAnswer";
         }
     }
@@ -52,6 +52,7 @@ public class QuizController {
             log.debug("The session data is not found.");
             return "SessionExpired";
         } else {
+            log.debug("problem = " + problem);
             return "TryAgain";
         }
     }
@@ -68,6 +69,7 @@ public class QuizController {
             log.debug("The session data is not found.");
             return "SessionExpired";
         } else {
+            log.debug("problem = " + problem);
             model.addAttribute("userAnswer", userAnswer);
             switch (quizService.gradeUserAnswer(problem, userAnswer)) {
                 case RIGHT_ANSWER:
