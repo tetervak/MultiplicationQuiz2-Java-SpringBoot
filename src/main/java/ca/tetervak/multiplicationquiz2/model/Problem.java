@@ -1,6 +1,8 @@
 package ca.tetervak.multiplicationquiz2.model;
 
-public class Problem {
+import java.io.Serializable;
+
+public class Problem implements Serializable {
 
     private final int a;
     private final int b;
