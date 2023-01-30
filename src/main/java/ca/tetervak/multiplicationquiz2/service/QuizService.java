@@ -2,9 +2,11 @@ package ca.tetervak.multiplicationquiz2.service;
 
 import ca.tetervak.multiplicationquiz2.model.Grade;
 import ca.tetervak.multiplicationquiz2.model.Problem;
+import org.springframework.stereotype.Service;
 
 import java.util.Random;
 
+@Service
 public class QuizService {
 
     private final Random random;
