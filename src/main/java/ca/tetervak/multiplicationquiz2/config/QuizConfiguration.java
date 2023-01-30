@@ -10,7 +10,7 @@ import java.security.SecureRandom;
 public class QuizConfiguration {
 
     @Bean
-    QuizService provideQuizService(){
+    public QuizService provideQuizService(){
         return new QuizService(new SecureRandom());
     }
 }
